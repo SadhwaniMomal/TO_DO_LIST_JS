@@ -1,0 +1,54 @@
+.list-container .list-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-item {
+    position: relative;
+  }
+
+  .list-name li {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+  }
+
+  .list-name li::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/unchecked.png");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .list-name li.checked::before {
+    background-image: url("../img/checked.png");
+    text-decoration: line-through;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .list-name li a {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: red;
+    border-radius: 50%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

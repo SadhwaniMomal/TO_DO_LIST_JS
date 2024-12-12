@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To-Do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container bg-info py-4">
+      <h1 class="text-white text-center">To-Do List</h1>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <label for="taskInput" class="visually-hidden">Task</label>
+          <input
+            type="text"
+            id="taskInput"
+            class="form-control"
+            placeholder="Add Task Here"
+          />
+        </div>
+        <div class="col-auto">
+          <button type="submit" id="addBtn" class="btn btn-success">Add</button>
+        </div>
+      </form>
+
+      <div class="row justify-content-center list-container mt-4">
+        <div class="col-md-8 bg-dark text-white p-3 rounded list-item">
+          <div>
+            <img
+              src="./img/book.png"
+              alt="listName"
+              class="img-fluid"
+              style="height: 10vh"
+            />
+            <span>Here Display Our Task</span>
+          </div>
+          <ul class="list-name">
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
